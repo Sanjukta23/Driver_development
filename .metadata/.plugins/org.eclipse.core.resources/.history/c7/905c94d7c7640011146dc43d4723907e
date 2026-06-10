@@ -211,7 +211,8 @@ void GPIO_IRQPriorityConfig(uint8_t IRQNumber, uint32_t IRQPriority){
 
  * @brief             - This function takes care of the handling and Clear the pending interrupt flag after an interrupt occurs
 
- * @param[in]         - which EXTI line's pending bit must be cleared
+ * @param[in]         - base address of the gpio peripheral
+ * @param[in]         - ENABLE or DISABLE macros
 
  * @return            - none
 

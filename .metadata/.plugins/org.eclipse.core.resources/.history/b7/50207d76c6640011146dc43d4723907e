@@ -92,7 +92,7 @@ uint8_t GPIO_ReadFromInputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber){
 
  * @param[in]         - base address of the gpio peripheral
 
- * @return            - uint16_t
+ * @return            - uint8_t
 
  * @Note              - none
  */
@@ -111,7 +111,7 @@ uint16_t GPIO_ReadFromInputPort(GPIO_RegDef_t *pGPIOx){
 
  * @param[in]         - base address of the gpio peripheral
  * @param[in]         - pin number of the gpio port
- * @param[in]         - value to write to the pin
+ * @param[in]         - value to write on the pin
 
  * @return            - none
 
@@ -126,16 +126,16 @@ void GPIO_WriteToOutputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber, uint8_t Val
 
 
 /*
- * @fn      		  - GPIO_WriteToOutputPort
+ * @fn      		  - GPIO_PeriClockControl
 
- * @brief             - This function writes to the given GPIO port
+ * @brief             - This function enables or disables peripheral clock for the given GPIO port
 
  * @param[in]         - base address of the gpio peripheral
- * @param[in]         - value to write to the port
+ * @param[in]         - ENABLE or DISABLE macros
 
- * @return            - none
+ * @return            -  none
 
- * @Note              - none
+ * @Note              -  none
  */
 
 void GPIO_WriteToOutputPort(GPIO_RegDef_t *pGPIOx, uint16_t Value){
@@ -146,16 +146,16 @@ void GPIO_WriteToOutputPort(GPIO_RegDef_t *pGPIOx, uint16_t Value){
 
 
 /*
- * @fn      		  - GPIO_ToggleOutputPin
+ * @fn      		  - GPIO_PeriClockControl
 
- * @brief             - This function toggles the given GPIO pin
+ * @brief             - This function enables or disables peripheral clock for the given GPIO port
 
  * @param[in]         - base address of the gpio peripheral
- * @param[in]         - pin number of the gpio port
+ * @param[in]         - ENABLE or DISABLE macros
 
- * @return            - none
+ * @return            -  none
 
- * @Note              - none
+ * @Note              -  none
  */
 
 void GPIO_ToggleOutputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber){
@@ -167,16 +167,16 @@ void GPIO_ToggleOutputPin(GPIO_RegDef_t *pGPIOx, uint8_t PinNumber){
 
 
 /*
- * @fn      		  - GPIO_IRQInterruptConfig
+ * @fn      		  - GPIO_PeriClockControl
 
- * @brief             - Enables an interrupt line in the NVIC
+ * @brief             - This function enables or disables peripheral clock for the given GPIO port
 
- * @param[in]         - which interrupt number you want to configure
+ * @param[in]         - base address of the gpio peripheral
  * @param[in]         - ENABLE or DISABLE macros
 
- * @return            - none
+ * @return            -  none
 
- * @Note              - none
+ * @Note              -  none
  */
 
 void GPIO_IRQInterruptConfig(uint8_t IRQNumber, uint8_t EnorDi){
@@ -187,16 +187,16 @@ void GPIO_IRQInterruptConfig(uint8_t IRQNumber, uint8_t EnorDi){
 
 
 /*
- * @fn      		  - GPIO_IRQPriorityConfig
+ * @fn      		  - GPIO_PeriClockControl
 
- * @brief             - This function sets the priority of an interrupt
+ * @brief             - This function enables or disables peripheral clock for the given GPIO port
 
- * @param[in]         - which interrupt number you want to configure
- * @param[in]         - specifies the priority level.
+ * @param[in]         - base address of the gpio peripheral
+ * @param[in]         - ENABLE or DISABLE macros
 
- * @return            - none
+ * @return            -  none
 
- * @Note              - none
+ * @Note              -  none
  */
 
 void GPIO_IRQPriorityConfig(uint8_t IRQNumber, uint32_t IRQPriority){
@@ -207,15 +207,16 @@ void GPIO_IRQPriorityConfig(uint8_t IRQNumber, uint32_t IRQPriority){
 
 
 /*
- * @fn      		  - GPIO_IRQHandling
+ * @fn      		  - GPIO_PeriClockControl
 
- * @brief             - This function takes care of the handling and Clear the pending interrupt flag after an interrupt occurs
+ * @brief             - This function enables or disables peripheral clock for the given GPIO port
 
- * @param[in]         - which EXTI line's pending bit must be cleared
+ * @param[in]         - base address of the gpio peripheral
+ * @param[in]         - ENABLE or DISABLE macros
 
- * @return            - none
+ * @return            -  none
 
- * @Note              - none
+ * @Note              -  none
  */
 
 void GPIO_IRQHandling(uint8_t PinNumber){
