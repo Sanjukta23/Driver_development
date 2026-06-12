@@ -176,8 +176,20 @@ typedef struct
 } SYSCFG_RegDef_t;
 
 
+  //Peripheral register definition structure for SPI
 
-
+typedef struct
+{
+	__vo uint32_t CR1;
+	__vo uint32_t CR2;
+	__vo uint32_t SR;
+	__vo uint32_t DR;
+	__vo uint32_t CRCPR;
+	__vo uint32_t RXCRCR;
+	__vo uint32_t TXCRCR;
+	__vo uint32_t I2SCFGR;
+	__vo uint32_t I2SPR;
+} SPI_RegDef_t;
 
 
 
@@ -226,9 +238,13 @@ typedef struct
 #define GPIOH  				((GPIO_RegDef_t*)GPIOH_BASEADDR)
 
 #define RCC                 ((RCC_RegDef_t*) RCC_BASEADDR)
-
 #define EXTI				((EXTI_RegDef_t*)EXTI_BASEADDR)
 #define SYSCFG				((SYSCFG_RegDef_t*)SYSCFG_BASEADDR)
+
+#define SPI1  				((SPI_RegDef_t*)SPI1_BASEADDR)
+#define SPI2  				((SPI_RegDef_t*)SPI2_BASEADDR)
+#define SPI3  				((SPI_RegDef_t*)SPI3_BASEADDR)
+#define SPI4  				((SPI_RegDef_t*)SPI4_BASEADDR)
 
 
 
@@ -338,11 +354,7 @@ typedef struct
 								        (x == GPIOH)?7:0)
 
 
-/*
- * IRQ(Interrupt Request) Numbers of STM32F407x MCU
- * NOTE: update these macros with valid values according to your MCU
- * TODO: You may complete this list for other peripherals
- */
+  // IRQ(Interrupt Request) Numbers of STM32F4466xX MCU
 
 #define IRQ_NO_EXTI0 		6
 #define IRQ_NO_EXTI1 		7
@@ -351,27 +363,30 @@ typedef struct
 #define IRQ_NO_EXTI4 		10
 #define IRQ_NO_EXTI9_5 		23
 #define IRQ_NO_EXTI15_10 	40
-#define IRQ_NO_SPI1			35
-#define IRQ_NO_SPI2         36
-#define IRQ_NO_SPI3         51
-#define IRQ_NO_SPI4
-#define IRQ_NO_I2C1_EV     31
-#define IRQ_NO_I2C1_ER     32
-#define IRQ_NO_USART1	    37
-#define IRQ_NO_USART2	    38
-#define IRQ_NO_USART3	    39
-#define IRQ_NO_UART4	    52
-#define IRQ_NO_UART5	    53
-#define IRQ_NO_USART6	    71
 
-/*
- * macros for all the possible priority levels
- */
-#define NVIC_IRQ_PRI0    0
+
+
+  //macros for all the possible priority levels
+
+#define NVIC_IRQ_PRI0     1
+#define NVIC_IRQ_PRI1     2
+#define NVIC_IRQ_PRI2     3
+#define NVIC_IRQ_PRI3     4
+#define NVIC_IRQ_PRI4     5
+#define NVIC_IRQ_PRI5     6
+#define NVIC_IRQ_PRI7     7
+#define NVIC_IRQ_PRI8     8
+#define NVIC_IRQ_PRI9     9
+#define NVIC_IRQ_PRI10    10
+#define NVIC_IRQ_PRI11    11
+#define NVIC_IRQ_PRI12    12
+#define NVIC_IRQ_PRI13    13
+#define NVIC_IRQ_PRI14    14
 #define NVIC_IRQ_PRI15    15
 
 
-//some generic macros
+
+  //some generic macros
 
 #define ENABLE 				1
 #define DISABLE 			0

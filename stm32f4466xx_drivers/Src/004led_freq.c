@@ -35,6 +35,7 @@ int main(void)
 	{
 		GPIO_ToggleOutputPin(GPIOA,GPIO_PIN_NO_8);
 
+
 	}
 	return 0;
 }
