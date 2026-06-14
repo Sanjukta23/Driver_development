@@ -39,7 +39,7 @@ typedef struct
 #define SPI_DEVICE_MODE_SLAVE     0
 
 
-//@SPI_BusConfig
+  //@SPI_BusConfig
 
 #define SPI_BUS_CONFIG_FD                1
 #define SPI_BUS_CONFIG_HD                2
@@ -82,6 +82,11 @@ typedef struct
 #define SPI_SSM_DI     0
 
 
+  //SPI related status flags definitions
+
+#define SPI_TXE_FLAG    ( 1 << SPI_SR_TXE)
+#define SPI_RXNE_FLAG   ( 1 << SPI_SR_RXNE)
+#define SPI_BUSY_FLAG   ( 1 << SPI_SR_BSY)
 
 
 
@@ -131,5 +136,12 @@ void SPI_IRQInterruptConfig(uint8_t IRQNumber, uint8_t EnorDi);
 void SPI_IRQPriorityConfig(uint8_t IRQNumber, uint32_t IRQPriority);
 void SPI_IRQHandling(SPI_Handle_t *pHandle);
 
+
+  //Other Peripheral Control APIs
+
+void SPI_PeripheralControl(SPI_RegDef_t *pSPIx, uint8_t EnOrDi);
+void SPI_SSIConfig(SPI_RegDef_t *pSPIx, uint8_t EnOrDi);
+void SPI_SSOEConfig(SPI_RegDef_t *pSPIx, uint8_t EnOrDi);
+uint8_t SPI_GetFlagStatus(SPI_RegDef_t *pSPIx , uint32_t FlagName);
 
 #endif /* INC_STM32F4466XX_SPI_DRIVER_H_ */

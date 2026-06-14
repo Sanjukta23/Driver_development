@@ -5,18 +5,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Src/004led_freq.c \
-../Src/syscalls.c \
+../Src/008spi_cmd_handling.c \
 ../Src/sysmem.c 
 
 OBJS += \
-./Src/004led_freq.o \
-./Src/syscalls.o \
+./Src/008spi_cmd_handling.o \
 ./Src/sysmem.o 
 
 C_DEPS += \
-./Src/004led_freq.d \
-./Src/syscalls.d \
+./Src/008spi_cmd_handling.d \
 ./Src/sysmem.d 
 
 
@@ -27,7 +24,7 @@ Src/%.o Src/%.su Src/%.cyclo: ../Src/%.c Src/subdir.mk
 clean: clean-Src
 
 clean-Src:
-	-$(RM) ./Src/004led_freq.cyclo ./Src/004led_freq.d ./Src/004led_freq.o ./Src/004led_freq.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
+	-$(RM) ./Src/008spi_cmd_handling.cyclo ./Src/008spi_cmd_handling.d ./Src/008spi_cmd_handling.o ./Src/008spi_cmd_handling.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
 
 .PHONY: clean-Src
 

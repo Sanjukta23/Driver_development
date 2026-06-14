@@ -346,7 +346,7 @@ typedef struct
 
 #define SPI1_REG_RESET()               do{ (RCC->APB2RSTR |= (1 << 12)); (RCC->AHB1RSTR &= ~(1 << 12)); }while(0)
 #define SPI2_REG_RESET()               do{ (RCC->APB1RSTR |= (1 << 14)); (RCC->AHB1RSTR &= ~(1 << 14)); }while(0)
-#define SP13_REG_RESET()               do{ (RCC->APB1RSTR |= (1 << 15)); (RCC->AHB1RSTR &= ~(1 << 15)); }while(0)
+#define SPI3_REG_RESET()               do{ (RCC->APB1RSTR |= (1 << 15)); (RCC->AHB1RSTR &= ~(1 << 15)); }while(0)
 #define SPI4_REG_RESET()               do{ (RCC->APB2RSTR |= (1 << 13)); (RCC->AHB1RSTR &= ~(1 << 13)); }while(0)
 
 
@@ -401,6 +401,8 @@ typedef struct
 #define RESET 				DISABLE
 #define GPIO_PIN_SET        SET
 #define GPIO_PIN_RESET      RESET
+#define FLAG_RESET          RESET
+#define FLAG_SET 			SET
 
   //Bit position definitions of SPI peripheral
 
