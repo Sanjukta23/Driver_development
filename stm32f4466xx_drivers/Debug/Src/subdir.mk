@@ -5,15 +5,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Src/001led_toggle.c \
+../Src/009spi_message_rcv_it.c \
 ../Src/sysmem.c 
 
 OBJS += \
-./Src/001led_toggle.o \
+./Src/009spi_message_rcv_it.o \
 ./Src/sysmem.o 
 
 C_DEPS += \
-./Src/001led_toggle.d \
+./Src/009spi_message_rcv_it.d \
 ./Src/sysmem.d 
 
 
@@ -24,7 +24,7 @@ Src/%.o Src/%.su Src/%.cyclo: ../Src/%.c Src/subdir.mk
 clean: clean-Src
 
 clean-Src:
-	-$(RM) ./Src/001led_toggle.cyclo ./Src/001led_toggle.d ./Src/001led_toggle.o ./Src/001led_toggle.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
+	-$(RM) ./Src/009spi_message_rcv_it.cyclo ./Src/009spi_message_rcv_it.d ./Src/009spi_message_rcv_it.o ./Src/009spi_message_rcv_it.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
 
 .PHONY: clean-Src
 
