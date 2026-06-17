@@ -1,4 +1,4 @@
-"./Src/012i2c_master_rx_testingIT.o"
+"./Src/014i2c_slave_tx_string2.o"
 "./Src/sysmem.o"
 "./Startup/startup_stm32f446retx.o"
 "./drivers/Src/stm32f4466xx_gpio_driver.o"
