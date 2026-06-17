@@ -5,15 +5,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Src/009spi_message_rcv_it.c \
+../Src/012i2c_master_rx_testingIT.c \
 ../Src/sysmem.c 
 
 OBJS += \
-./Src/009spi_message_rcv_it.o \
+./Src/012i2c_master_rx_testingIT.o \
 ./Src/sysmem.o 
 
 C_DEPS += \
-./Src/009spi_message_rcv_it.d \
+./Src/012i2c_master_rx_testingIT.d \
 ./Src/sysmem.d 
 
 
@@ -24,7 +24,7 @@ Src/%.o Src/%.su Src/%.cyclo: ../Src/%.c Src/subdir.mk
 clean: clean-Src
 
 clean-Src:
-	-$(RM) ./Src/009spi_message_rcv_it.cyclo ./Src/009spi_message_rcv_it.d ./Src/009spi_message_rcv_it.o ./Src/009spi_message_rcv_it.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
+	-$(RM) ./Src/012i2c_master_rx_testingIT.cyclo ./Src/012i2c_master_rx_testingIT.d ./Src/012i2c_master_rx_testingIT.o ./Src/012i2c_master_rx_testingIT.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
 
 .PHONY: clean-Src
 

@@ -1,13 +1,16 @@
-19:40:08 **** Incremental Build of configuration Debug for project stm32f4466xx_drivers ****
+11:41:23 **** Incremental Build of configuration Debug for project stm32f4466xx_drivers ****
 make -j12 all 
-arm-none-eabi-gcc "../Src/009spi_message_rcv_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I"D:/Embedded/Driver_development/stm32f4466xx_drivers/drivers/Inc" -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/009spi_message_rcv_it.d" -MT"Src/009spi_message_rcv_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/009spi_message_rcv_it.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f4466xx_gpio_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I"D:/Embedded/Driver_development/stm32f4466xx_drivers/drivers/Inc" -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"drivers/Src/stm32f4466xx_gpio_driver.d" -MT"drivers/Src/stm32f4466xx_gpio_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "drivers/Src/stm32f4466xx_gpio_driver.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f4466xx_i2c_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I"D:/Embedded/Driver_development/stm32f4466xx_drivers/drivers/Inc" -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"drivers/Src/stm32f4466xx_i2c_driver.d" -MT"drivers/Src/stm32f4466xx_i2c_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "drivers/Src/stm32f4466xx_i2c_driver.o"
+arm-none-eabi-gcc "../drivers/Src/stm32f4466xx_spi_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I"D:/Embedded/Driver_development/stm32f4466xx_drivers/drivers/Inc" -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"drivers/Src/stm32f4466xx_spi_driver.d" -MT"drivers/Src/stm32f4466xx_spi_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "drivers/Src/stm32f4466xx_spi_driver.o"
+arm-none-eabi-gcc "../Src/012i2c_master_rx_testingIT.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I"D:/Embedded/Driver_development/stm32f4466xx_drivers/drivers/Inc" -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/012i2c_master_rx_testingIT.d" -MT"Src/012i2c_master_rx_testingIT.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/012i2c_master_rx_testingIT.o"
 arm-none-eabi-gcc -o "stm32f4466xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Embedded\Driver_development\stm32f4466xx_drivers\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f4466xx_drivers.map" -Wl,--gc-sections -static -specs=rdimon.specs -lc -lrdimon --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: stm32f4466xx_drivers.elf
  
 arm-none-eabi-size  stm32f4466xx_drivers.elf 
 arm-none-eabi-objdump -h -S stm32f4466xx_drivers.elf  > "stm32f4466xx_drivers.list"
    text	   data	    bss	    dec	    hex	filename
-   9048	     92	   2604	  11744	   2de0	stm32f4466xx_drivers.elf
+  10932	    120	   2152	  13204	   3394	stm32f4466xx_drivers.elf
 Finished building: default.size.stdout
  
 Finished building: stm32f4466xx_drivers.list
