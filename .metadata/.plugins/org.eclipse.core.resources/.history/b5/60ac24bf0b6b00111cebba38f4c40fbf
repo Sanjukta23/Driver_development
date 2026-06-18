@@ -1,0 +1,11 @@
+/*
+ * stm32f4466xx_rcc_driver.c
+ *
+ *  Created on: Jun 18, 2026
+ *      Author: SANJU
+ */
+
+
+uint16_t AHB_PreScaler[8] = {2, 4, 8, 16, 64, 128, 256, 512};
+uint8_t  APB1_PreScaler[4] = {2, 4, 8, 16};
+

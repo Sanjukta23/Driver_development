@@ -5,15 +5,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Src/014i2c_slave_tx_string2.c \
+../Src/016uart_case.c \
 ../Src/sysmem.c 
 
 OBJS += \
-./Src/014i2c_slave_tx_string2.o \
+./Src/016uart_case.o \
 ./Src/sysmem.o 
 
 C_DEPS += \
-./Src/014i2c_slave_tx_string2.d \
+./Src/016uart_case.d \
 ./Src/sysmem.d 
 
 
@@ -24,7 +24,7 @@ Src/%.o Src/%.su Src/%.cyclo: ../Src/%.c Src/subdir.mk
 clean: clean-Src
 
 clean-Src:
-	-$(RM) ./Src/014i2c_slave_tx_string2.cyclo ./Src/014i2c_slave_tx_string2.d ./Src/014i2c_slave_tx_string2.o ./Src/014i2c_slave_tx_string2.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
+	-$(RM) ./Src/016uart_case.cyclo ./Src/016uart_case.d ./Src/016uart_case.o ./Src/016uart_case.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
 
 .PHONY: clean-Src
 

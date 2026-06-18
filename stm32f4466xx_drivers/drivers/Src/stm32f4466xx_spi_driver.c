@@ -481,8 +481,6 @@ uint8_t SPI_ReceiveDataIT(SPI_Handle_t *pSPIHandle, uint8_t *pRxBuffer, uint32_t
 }
 
 
-
-
 /*
  * @fn      		  - SPI_IRQHandling
 
