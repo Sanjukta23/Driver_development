@@ -227,36 +227,6 @@ typedef struct
 	__vo uint32_t GTPR;
 } USART_RegDef_t;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   //Peripheral definitions ( Peripheral base addresses type casted to xxx_RegDef_t)
 
 #define GPIOA  				((GPIO_RegDef_t*)GPIOA_BASEADDR)

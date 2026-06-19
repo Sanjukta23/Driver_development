@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item key="LastUsedHeaderTemplate" value="Default C header template"/>
-	<item key="org.eclipse.cdt.utils.ui.controls.FileListControl" value="${workspace_loc:/${ProjName}/drivers/Inc}"/>
 	<item key="LastUsedSourceTemplate" value="Default C source template"/>
+	<item key="org.eclipse.cdt.utils.ui.controls.FileListControl" value="-specs=rdimon.specs -lc -lrdimon"/>
 	<section name="NewHeaderFileCreationWizard.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="342"/>
 		<item key="DIALOG_Y_ORIGIN" value="199"/>
@@ -39,5 +39,12 @@
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
 		<item key="size.width" value="916"/>
 		<item key="size.height" value="180"/>
+	</section>
+	<section name="NewSourceFolderCreationWizard.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="342"/>
+		<item key="DIALOG_Y_ORIGIN" value="199"/>
+		<item key="DIALOG_WIDTH" value="700"/>
+		<item key="DIALOG_HEIGHT" value="480"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 </section>
