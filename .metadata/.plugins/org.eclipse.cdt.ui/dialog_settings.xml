@@ -2,7 +2,7 @@
 <section name="Workbench">
 	<item key="LastUsedHeaderTemplate" value="Default C header template"/>
 	<item key="LastUsedSourceTemplate" value="Default C source template"/>
-	<item key="org.eclipse.cdt.utils.ui.controls.FileListControl" value="-specs=rdimon.specs -lc -lrdimon"/>
+	<item key="org.eclipse.cdt.utils.ui.controls.FileListControl" value="${workspace_loc:/${ProjName}/bsp}"/>
 	<section name="NewHeaderFileCreationWizard.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="342"/>
 		<item key="DIALOG_Y_ORIGIN" value="199"/>
